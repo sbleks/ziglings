@@ -57,11 +57,13 @@ pub fn main() void {
         \\</p>
         \\
     , .{
+        // Old way of doing it, updated in later version of ziglings
+        // @enumToInt(Color.red),
+        // @enumToInt(Color.green),
+        // @enumToInt(Color.blue), // Oops! We're missing something!
+
         @intFromEnum(Color.red),
         @intFromEnum(Color.green),
-        @intFromEnum(???), // Oops! We're missing something!
-        @enumToInt(Color.red),
-        @enumToInt(Color.green),
-        @enumToInt(Color.blue), // Oops! We're missing something!
+        @intFromEnum(Color.blue), // Oops! We're missing something!
     });
 }
