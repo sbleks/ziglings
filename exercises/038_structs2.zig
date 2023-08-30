@@ -43,7 +43,7 @@ pub fn main() void {
     // Feel free to run this program without adding Zump. What does
     // it do and why?
     chars[1] = Character{
-        .class = Class.bard,
+        .role = Role.bard,
         .gold = 10,
         .health = 100,
         .experience = 20,

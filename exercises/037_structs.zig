@@ -36,8 +36,8 @@ const Character = struct {
     role: Role,
     gold: u32,
     experience: u32,
+    health: u32,
 };
-const Character = struct { class: Class, gold: u32, experience: u32, health: u8 };
 
 pub fn main() void {
     // Please initialize Glorp with 100 health.
